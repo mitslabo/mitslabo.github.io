@@ -8,7 +8,7 @@ Download binaries for your CPU architecture from:
 
 - ACP Commander Go: [https://github.com/mitslabo/acp-commander-go/releases](https://github.com/mitslabo/acp-commander-go/releases)
 - musl-builder: [https://github.com/mitslabo/musl-builder](https://github.com/mitslabo/musl-builder)
-- diskman: [https://github.com/mitslabo/diskman/releases](https://github.com/mitslabo/diskman/releases)
+- diskman-web: [https://github.com/mitslabo/diskman-web/releases](https://github.com/mitslabo/diskman-web/releases)
 
 ### 2. Discover Your TeraStation
 
@@ -39,8 +39,8 @@ acp-commander_XXXX -pw <admin_password> -t <terastation_ip> -x <local_file>=<rem
 Example:
 
 ```bash
-acp-commander_linux_amd64 -pw password -t 192.168.11.111 -x diskman=/usr/local/bin/diskman
-acp-commander_linux_amd64 -pw password -t 192.168.11.111 -x ddrescue=/usr/local/bin/ddrescue
+acp-commander_linux_amd64 -pw password -t 192.168.11.111 -x diskman-web.amd64=/usr/local/bin/diskman
+acp-commander_linux_amd64 -pw password -t 192.168.11.111 -x ddrescue.amd64=/usr/local/bin/ddrescue
 ```
 
 ### 4. Enable Telnet
@@ -67,15 +67,7 @@ Command:
 
 ```bash
 telnet <terastation_ip>
-chmod +x /usr/local/bin/diskman
-chmod +x /usr/local/bin/ddrescue
-```
-
-Example:
-
-```bash
-telnet 192.168.11.111
-chmod +x /usr/local/bin/diskman
+chmod +x /usr/local/bin/diskman-web
 chmod +x /usr/local/bin/ddrescue
 ```
 
@@ -86,12 +78,12 @@ Start diskman after login.
 Command:
 
 ```bash
-diskman
+diskman-web --daemon
 ```
 
 Example:
 
 ```bash
-/usr/local/bin/diskman
+/usr/local/bin/diskman --daemon
 ```
 
