@@ -1,6 +1,6 @@
-# How to Run diskman on TeraStation
+# How to Run diskman-web on TeraStation
 
-This guide explains the basic workflow to run `diskman` on a TeraStation device.
+This guide explains the basic workflow to run `diskman-web` on a TeraStation device.
 
 ### 1. Download Required Packages
 
@@ -26,7 +26,7 @@ Example:
 acp-commander_linux_amd64 -f
 ```
 
-### 3. Upload ddrescue and diskman to TeraStation
+### 3. Upload ddrescue and diskman-web to TeraStation
 
 Transfer executables to the target device.
 
@@ -39,7 +39,7 @@ acp-commander_XXXX -pw <admin_password> -t <terastation_ip> -x <local_file>=<rem
 Example:
 
 ```bash
-acp-commander_linux_amd64 -pw password -t 192.168.11.111 -x diskman-web.amd64=/usr/local/bin/diskman
+acp-commander_linux_amd64 -pw password -t 192.168.11.111 -x diskman-web.amd64=/usr/local/bin/diskman-web
 acp-commander_linux_amd64 -pw password -t 192.168.11.111 -x ddrescue.amd64=/usr/local/bin/ddrescue
 ```
 
@@ -71,9 +71,9 @@ chmod +x /usr/local/bin/diskman-web
 chmod +x /usr/local/bin/ddrescue
 ```
 
-### 6. Run diskman
+### 6. Run diskman-web
 
-Start diskman after login.
+Start diskman-web after login.
 
 Command:
 
