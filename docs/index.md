@@ -84,6 +84,6 @@ diskman-web --daemon
 Example:
 
 ```bash
-/usr/local/bin/diskman --daemon
+/usr/local/bin/diskman-web --daemon
 ```
 
