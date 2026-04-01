@@ -87,3 +87,10 @@ Example:
 /usr/local/bin/diskman-web --daemon
 ```
 
+### 7. Access via a web browser
+
+Command:
+
+```
+http://<terastation_ip>:8080
+```
